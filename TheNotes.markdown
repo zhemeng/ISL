@@ -5,7 +5,8 @@ by Gareth James • Daniela Witten • Trevor Hastie • Robert Tibshirani
 ### Chapter 1: Introduction
 
 ### Chapter 2: Statistical Learning
-* pg 31: There are two main reasons that we may wish to estimate h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x: prediction and inference.
+* pg 31: General form: https://latex.codecogs.com/gif.latex?Y%20%3Df%28X%29&plus;%5Cepsilon, where https://latex.codecogs.com/gif.latex?%5Cepsilon is a random error term. There are two main reasons that we may wish to estimate https://latex.codecogs.com/gif.latex?f: prediction and inference.
+* pg 32: Variability associated with https://latex.codecogs.com/gif.latex?%5Cepsilon also affects the accuracy of our predictions. This is known as the irreducible error, because no matter how well we estimate https://latex.codecogs.com/gif.latex?f, we cannot reduce the error introduced by https://latex.codecogs.com/gif.latex?%5Cepsilon.
 * pg 67: Private methods are defined within a constructor or another method, but not available externally through any instance.
 * pg 68: Privileged methods are defined within the constructor using the `this` keyword, and can access private methods while being publicly accessible.
 * pg 70: When you declare function `foo() { ... }`, you can call the function before its definition. If you use var `foo = function() { ... }`, you can't.
