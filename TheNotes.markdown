@@ -11,7 +11,21 @@ by Gareth James • Daniela Witten • Trevor Hastie • Robert Tibshirani
 <img src="https://github.com/zhemeng/markdown_attachments/blob/master/Screen%20Shot%202019-09-21%20at%203.48.37%20PM.png" width="700">
 
 The Trade-Off Between Prediction Accuracy and Model Interpretability: as the flexibility of a method increases, its interpretability decreases.
-* pg 
+* pg 26: Supervised: For each observation of the predictor measurement(s), there is an associated response measurement, linear regression, logistic regression, GAM, boosting, and support vector machines. Unsupervised: Lack a response vari- able that can supervise our analysis, clustering.
+* pg 28: A semi-supervised learning problem. In this setting, we wish to use a statistical learning method that can incorporate the m observations for which response measurements are available as well as the n − m observations for which they are not.
+
+We tend to refer to problems with a quantitative response as regression problems, while those involving a qualitative response are often referred to as classification problems. Least squares linear regression (Chapter 3) is used with a quantitative response, whereas logistic regression (Chapter 4) is typically used with a qualitative (two-class, or binary) response. As such it is often used as a classification method. But since it estimates class probabilities, it can be thought of as a regression method as well. Some statistical methods, such as K-nearest neighbors (Chapters 2 and 4) and boosting (Chapter 8), can be used in the case of either quantitative or qualitative responses.
+* pg 29: In the regression setting, the most commonly-used measure is the mean squared error (MSE): ![](https://latex.codecogs.com/png.latex?MSE%3D%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28y_%7Bi%7D-%5Chat%7Bf%7D%28x_%7Bi%7D%29%29%5E2)
+* pg 30: In general, we do not really care how well the method works on the training data. Rather, we are interested in the accuracy of the predictions that we obtain when we apply our method to previously unseen test data, we want to choose the method that give the lowest test MSE.
+* pg 32: Flexibility, or more for- mally the degrees of freedom, for a number of smoothing splines. The degrees of freedom is a quantity that summarizes the flexibility of a curve. As the flexibility of the statistical learning method increases, we observe a monotone decrease in the training MSE and a U-shape in the test MSE. When a given method yields a small training MSE but a large test MSE, we are said to be overfitting the data.
+
+<img src="https://github.com/zhemeng/markdown_attachments/blob/master/Screen%20Shot%202019-09-21%20at%204.21.20%20PM.png" width="300">
+* pg 33: The Bias-Variance Trade-Off: The expected test MSE, for a given value, can always be decomposed into the sum of three fundamental quantities: the variance of fitted f(x0), the squared bias of fitted f(x0) and the variance of the error terms ε. 
+
+Variance refers to the amount by which fitted f would change if we estimated it using a different training data set. On the other hand, bias refers to the error that is introduced by approxi- mating a real-life problem, which may be extremely complicated, by a much simpler model. Generally, more flexible methods result in less bias. As a general rule, as we use more flexible methods, the variance will increase and the bias will decrease. 
+
+<img src="https://github.com/zhemeng/markdown_attachments/blob/master/Screen%20Shot%202019-09-21%20at%204.33.07%20PM.png" width="900">
+
 * pg 67: Private methods are defined within a constructor or another method, but not available externally through any instance.
 * pg 68: Privileged methods are defined within the constructor using the `this` keyword, and can access private methods while being publicly accessible.
 * pg 70: When you declare function `foo() { ... }`, you can call the function before its definition. If you use var `foo = function() { ... }`, you can't.
