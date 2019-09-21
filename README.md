@@ -1,2 +1,2 @@
 # ISL
-An Introduction to Statistical Learning
+Reading Notes of 'An Introduction to Statistical Learning'
